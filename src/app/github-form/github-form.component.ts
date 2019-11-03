@@ -1,20 +1,19 @@
-import { Component, OnInit,Output,EventEmitter } from '@angular/core';
-import { Github } from '../github';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-goal-form',
-  templateUrl: './goal-form.component.html',
-  styleUrls: ['./goal-form.component.css']
+  selector: 'app-github-form',
+  templateUrl: './github-form.component.html',
+  styleUrls: ['./github-form.component.css']
 })
-export class GoalFormComponent implements OnInit {
-
-  newGithub = new Github;
-  @Output() addGithub =new EventEmitter<Github>();
-
-  submitGoal(){
-    this.addGithub.emit(this.newGithub);
-  }
+export class GithubFormComponent implements OnInit {
+  @Output() emitSearch = new EventEmitter<any>()
+  
+  searchTerm:string;
   constructor() { }
+
+  search(){
+    this.emitSearch.emit(this.searchTerm);
+  }
 
   ngOnInit() {
   }
