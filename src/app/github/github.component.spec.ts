@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GithubComponent } from './github.component';
 
-describe('GithubComponent', () => {
+describe('GiphyComponent', () => {
   let component: GithubComponent;
   let fixture: ComponentFixture<GithubComponent>;
 
