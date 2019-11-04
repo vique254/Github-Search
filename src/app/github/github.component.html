@@ -1,13 +1,12 @@
 <div>
-        <ng-progress></ng-progress>
-    <h1>hey</h1>
-    <hr>
-    <ul>
-      <li *ngFor='let github of githubs'>
-        {{Github.name}}
-      </li>
-    </ul>
-    <div class="col-md-6">
-        <app-github-search-form></app-github-search-form>
+  <app-github-form (emitSearch)="searchGithub($event)"></app-github-form>
+  <div *ngIf="githubs">
+      <div class="card-columns">
+          <div *ngFor="let github of githubs">
+              <div class="card">
+                  <img src="{{github.url}}" class="card-img">
+              </div>
+          </div>
       </div>
   </div>
+</div>
