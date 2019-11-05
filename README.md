@@ -8,6 +8,8 @@ An Angular app that allows users to view and search other github users and view 
 * Clone the project (git clone https://github.com/vique254/Github-Search.git )
 * Navigate into the created folder (cd Github)
 * Open the project with a text editor eg visual studio (code .) or atom (atom .)
+### Live-link
+**https://vique254.github.io/Github-Search/**
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
