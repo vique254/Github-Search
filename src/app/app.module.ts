@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService }from './profile-service/profile.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule} from '@angular/forms'
+import{DateCountPipe} from './date-count.pipe'
 
 // import {  GithubFormComponent} from './github-form/github-form.component';
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule} from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    DateCountPipe,
     // GithubFormComponent,
   ],
   providers: [ProfileService],
