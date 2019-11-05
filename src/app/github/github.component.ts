@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Github } from '../github';
-import { GithubService } from '../github-service/github.service';
-import { HttpClient } from '@angular/common/http';
+import {GithubService} from '../github-service/github.service';
+import {Github} from '../github';
 
 @Component({
   selector: 'app-github',
@@ -9,12 +8,25 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  github:Github;
-githubService:any;
-  constructor() {
-   }
+	githubs:Github[];
+	constructor(public githubService:GithubService) { }
 
-  ngOnInit() {
+	ngOnInit() {
+		this.searchGithub('vique254');
+	}
+  searchGithub(arg0: string) {
+    throw new Error("Method not implemented.");
   }
+
+	// searchGithub(searchTerm: string){
+	// this.githubService.searchGithubs(searchTerm).then(
+	// 	()=>{
+	// 		this.githubs=this.githubService.githubs;
+	// 	},
+	// 	(error: any)=>{
+	// 		console.log(error)
+	// 	}
+	// )
+	// }
 
 }

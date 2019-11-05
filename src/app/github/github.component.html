@@ -1,5 +1,5 @@
 <div>
-  <app-github-form (emitSearch)="searchGithub($event)"></app-github-form>
+  <app-github-form (emitSearch)="searchGithubs($event)"> </app-github-form>
   <div *ngIf="githubs">
       <div class="card-columns">
           <div *ngFor="let github of githubs">

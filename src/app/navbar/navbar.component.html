@@ -6,7 +6,22 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" routerLink="search">Search<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" routerLink="/about">About</a>
+        <a class="nav-item nav-link" routerLink="/about">About</a> 
       </div>
-    </div>
+        </div>
   </nav>
+  <div class="jumbotron">
+    <ul>
+      <li class="list-item">following: {{user.following}}</li>
+      <li class="list-item">followers : {{user.followers}}</li>
+      <li class="list-item">Repository : {{user.public_repos}}</li>
+      <li class="list-item">created at : {{user.created_at}}</li>
+      <!-- <li>Repos :{{repos.searchTerm}}</li> -->
+    </ul>
+    </div>
+    <div class="list-items" *ngFor let repo of repos>
+        <p>{{repo.searchTerm}}</p>
+  </div>
+
+
+  
