@@ -9,6 +9,20 @@ h1{
     text-align: center;
     color: white;
 }
-avatar{
-    border-radius: 50%;
+.img{
+    border-radius: 60%;
+    justify-items: center;
+}
+.label{
+    color:white;
+}
+.form-control{
+padding-right: 45px;
+    width:200px;
+    margin: auto;
+}
+.row{
+display:table-row;
+  list-style: none;
+  flex: 0 0 33.333333%;
 }
