@@ -13,13 +13,14 @@ import{DateCountPipe} from './date-count.pipe'
   declarations: [
     AppComponent,
     ProfileComponent,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    DateCountPipe,
+    
     // GithubFormComponent,
   ],
   providers: [ProfileService],
